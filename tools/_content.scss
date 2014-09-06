@@ -1,0 +1,14 @@
+#content-wrap {
+	margin: 0 auto;
+	width: $width;
+} #main-content {
+	float: $left;
+	margin-top: 50px;
+	.info-text {
+		color: #fff;
+		float: $left;
+		span {
+		font-family: Arial Black;
+		}
+	}
+} // / #main-content
