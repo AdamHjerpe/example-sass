@@ -1,82 +1,89 @@
 body {
-	background: #08233e;
+	background: $background-col; // Added variable for color
+	font: $font-size $font-stack; // Fixed the sans-serif fallback, always good to make the font a global fallback rule, also made it into a variable
 	margin: 0;
 	padding: 0;
-	font: 15px Arial, serif;
-} #header-wrap {
+}
+#header-wrap {
 	margin: 0 auto;
 	width: $width;
-	#main-header {
-		margin: 0;
-		padding: 0;
-		img {
-			float: $left;
-			margin-top: 15px;
+}
+
+#main-header {
+	margin: 0;
+	padding: 0;
+	img {
+		float: $left;
+		margin-top: 15px;
+	}
+}// #main-header
+
+.right-con {
+	float: $right;
+	margin-left: 30px;
+	margin-top: 5px;
+	img {
+		opacity: 0.5;
+		transition: 0.5s;
+		&:hover {
+			opacity: 1;
 		}
-		.right-con {
-			float: $right;
-			margin-left: 30px;
-			margin-top: 5px;
-			img {
-				opacity: 0.5;
-				transition: 0.5s;
-				&:hover {
-					opacity: 1;
-				}
-			}
-			.be {
-				color: #fff;
-				cursor: pointer;
-				font-weight: bold;
-				font-size: 11px;
-				margin-top: 14px;
-				margin-left: 10px;
-				float: $right;
-				opacity: 0.5;
-				transition: 0.5s;
-				&:hover {
-					opacity: 1;
-				}
-			}
-			.facebook {
-				color: #fff;
-				float: $right;
-				margin-top: 11px;
-				margin-left: 10px;
-				opacity: 0.5;
-				text-decoration: none;
-				transition: 0.5s;
-				&:hover {
-					opacity: 1;
-				}
-			}
+	} //img
+} // .right-con
+
+.be {
+	color: $white; // Added variable for color
+	cursor: pointer;
+	font-weight: bold;
+	font-size: $font-size; // Added varible for font-size
+	margin-top: 14px;
+	margin-left: 10px;
+	float: $right;
+	opacity: 0.5;
+	transition: 0.5s;
+	&:hover {
+		opacity: 1;
+	}
+} // .be
+
+.facebook {
+	color: $white; // Added variable for color
+	float: $right;
+	margin-top: $font-size; // Added varible for font-size
+	margin-left: 10px;
+	opacity: 0.5;
+	text-decoration: none;
+	transition: 0.5s;
+	&:hover {
+		opacity: 1;
+	}
+} // .facebook
+
+#main-nav {
+	float: $right;
+	ul {
+		list-style: none;
+	} // ul
+	li {
+		display: inline-block;
+	} // li
+	a {
+		color: $white; // Added variable for color
+		font: $font-size;  // Added varible for font-size;
+		opacity: 0.7;
+		padding: 5px;
+		text-decoration: none;
+		transition: ease 0.5s;
+		&.active {
+			border-bottom: 2px solid $white; // Added variable for color
 		}
-	}// / #main-header
-	#main-nav {
-		float: $right;
-		ul {
-			list-style: none;
+		&:hover {
+			border-bottom: 2px solid $white; // Added variable for color
+			opacity: 1;
 		}
-		li {
-			display: inline-block;
-		}
-		a {
-			color: #fff;
-			font: 11px Arial;
-			opacity: 0.7;
-			padding: 5px;
-			text-decoration: none;
-			transition: ease 0.5s;
-			&.active {
-				border-bottom: 2px solid #fff;
-			}
-			&:hover {
-				border-bottom: 2px solid #fff;
-				opacity: 1;
-			}
-		}
-	}// / #main-nav
-}// / #container-header
+	} // a
+}// / #main-nav
+
 
 
 
