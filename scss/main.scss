@@ -1,10 +1,8 @@
 // Variables
 @import "globals/globals";
+// Import of global tools
+@import "tools/mixins";
 
-// Header
+// Import of all modules
 @import "modules/header";
-
-// Main Content
-@import "modules/content"
-
-// Main Footer
+@import "modules/content";

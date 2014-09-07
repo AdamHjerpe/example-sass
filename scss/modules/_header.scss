@@ -13,22 +13,18 @@ body {
 	margin: 0;
 	padding: 0;
 	img {
-		float: $left;
+		float: left;
 		margin-top: 15px;
 	}
 }// #main-header
 
 .right-con {
-	float: $right;
+	float: right;
 	margin-left: 30px;
 	margin-top: 5px;
 	img {
-		opacity: 0.5;
-		transition: 0.5s;
-		&:hover {
-			opacity: 1;
-		}
-	} //img
+		@include opaque-hover; // Added a mixin where code was repeated, check the mixin for the code chunk
+	}
 } // .right-con
 
 .be {
@@ -38,29 +34,21 @@ body {
 	font-size: $font-size; // Added varible for font-size
 	margin-top: 14px;
 	margin-left: 10px;
-	float: $right;
-	opacity: 0.5;
-	transition: 0.5s;
-	&:hover {
-		opacity: 1;
-	}
+	float: right;
+	@include opaque-hover; // Added a mixin where code was repeated, check the mixin for the code chunk
 } // .be
 
 .facebook {
 	color: $white; // Added variable for color
-	float: $right;
-	margin-top: $font-size; // Added varible for font-size
+	float: right;
+	margin-top: 11px;
 	margin-left: 10px;
-	opacity: 0.5;
 	text-decoration: none;
-	transition: 0.5s;
-	&:hover {
-		opacity: 1;
-	}
+	@include opaque-hover; // Added a mixin where code was repeated, check the mixin for the code chunk
 } // .facebook
 
 #main-nav {
-	float: $right;
+	float: right;
 	ul {
 		list-style: none;
 	} // ul

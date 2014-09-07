@@ -43,8 +43,8 @@ body {
   float: right;
   margin-top: 11px;
   margin-left: 10px;
-  opacity: 0.5;
   text-decoration: none;
+  opacity: 0.5;
   transition: 0.5s; }
   .facebook:hover {
     opacity: 1; }
@@ -76,7 +76,7 @@ body {
   float: left;
   margin-top: 50px; }
   #main-content .info-text {
-    color: #fff;
+    color: #fafafa;
     float: left; }
     #main-content .info-text span {
       font-family: Arial Black; }
